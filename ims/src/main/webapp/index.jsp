@@ -30,10 +30,25 @@ Inventory Management
 <c:url var="loginAction" value="login" ></c:url>
 <div class="login-box">
   <h1>Login</h1>
+ <%-- 
+  <form:form action="${loginAction}" modelAttribute="users" method="POST">
+  	<div class="textbox">
+    <i class="fas fa-user"></i>
+    <form:input path="email" placeholder="Email"/>
+  </div>
+  <div class="textbox">
+    <i class="fas fa-lock"></i>
+    <form:password path="password" placeholder="Password"/>
+  </div>
+  <form:button value="Sign in" ></form:button>
+  </form:form> --%>
+  
+  
+  
   <form method="post" action="${loginAction}">
   <div class="textbox">
     <i class="fas fa-user"></i>
-    <input type="text" placeholder="Username" name="username">
+    <input type="text" placeholder="Username" name="email">
   </div>
 
   <div class="textbox">
