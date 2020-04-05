@@ -30,8 +30,8 @@ Inventory Management
 <c:url var="loginAction" value="login" ></c:url>
 <div class="login-box">
   <h1>Login</h1>
- <%-- 
-  <form:form action="${loginAction}" modelAttribute="users" method="POST">
+ 
+ <%--  <form:form action="${loginAction}" modelAttribute="user" method="POST">
   	<div class="textbox">
     <i class="fas fa-user"></i>
     <form:input path="email" placeholder="Email"/>
@@ -40,9 +40,9 @@ Inventory Management
     <i class="fas fa-lock"></i>
     <form:password path="password" placeholder="Password"/>
   </div>
-  <form:button value="Sign in" ></form:button>
-  </form:form> --%>
-  
+  <form:button value="Login" ></form:button>
+  </form:form> 
+   --%>
   
   
   <form method="post" action="${loginAction}">
@@ -55,9 +55,11 @@ Inventory Management
     <i class="fas fa-lock"></i>
     <input type="password" placeholder="Password" name="password">
   </div>
-
+<span>${message}</span>
   <input type="submit" class="btn" value="Sign in">
   </form>
+  
+  
 </div>
 </body>
 </html>
