@@ -9,14 +9,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.ims.Service.AuthService;
-import com.ims.model.users;
+import com.ims.beans.users;
  
 @Controller
 public class userLoginController {
 	@Autowired
 	AuthService authService;
-	
-	
 	  @RequestMapping(method = RequestMethod.POST)
 	  public String loginView(Model model) {
 		  
@@ -25,7 +23,7 @@ public class userLoginController {
 	 }
 	 
 	
-	@RequestMapping(value = "/login", method = RequestMethod.POST)
+	@RequestMapping(value = "/welcome", method = RequestMethod.POST)
 	public String doLogin(@RequestParam("email")String email, @RequestParam("password")String password, Model model) {
 		
 		System.out.println("Email : "+email+" Password : "+password);
@@ -40,4 +38,17 @@ public class userLoginController {
 			return "/error";
 		}
 	}
+	
+	@RequestMapping(value="/add",method = RequestMethod.GET)
+	  public String addItems() {
+		  
+			/* model.addAttribute("user",new users()); */
+	 return "/AddItems"; 
+	 }
+	@RequestMapping(value="/addItems",method = RequestMethod.POST)
+	  public String addItemDetails() {
+		  System.out.println("addItems called.. ...");
+			/* model.addAttribute("user",new users()); */
+	 return "redirect:add"; 
+	 }
 }

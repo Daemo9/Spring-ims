@@ -9,8 +9,8 @@ import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.stereotype.Repository;
 
+import com.ims.beans.users;
 import com.ims.dao.UsersDAO;
-import com.ims.model.users;
 
 @Repository("userDAO")
 public class UsersDAOImpl implements UsersDAO {

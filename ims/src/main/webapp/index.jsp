@@ -27,7 +27,7 @@ Inventory Management
   </div>
 </form:form> --%>
 
-<c:url var="loginAction" value="login" ></c:url>
+<c:url var="loginAction" value="welcome" ></c:url>
 <div class="login-box">
   <h1>Login</h1>
  

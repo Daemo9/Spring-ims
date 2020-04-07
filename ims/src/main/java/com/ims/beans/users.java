@@ -1,4 +1,4 @@
-package com.ims.model;
+package com.ims.beans;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,9 +10,9 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "users")
 public class users {
-	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
-	@Column(name = "id")
+		@Id
+		@GeneratedValue(strategy = GenerationType.SEQUENCE)
+		@Column(name = "id")
 	private int userId;
 	
 	@Column(name = "first_name")

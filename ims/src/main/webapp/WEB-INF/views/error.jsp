@@ -5,7 +5,9 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title></title>
+<title>
+Inventory Management
+</title>
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/css/err.css"/>" />
 </head>
