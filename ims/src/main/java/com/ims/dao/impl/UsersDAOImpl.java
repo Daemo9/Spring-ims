@@ -1,5 +1,6 @@
 package com.ims.dao.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -9,6 +10,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.stereotype.Repository;
 
+import com.ims.beans.Category;
 import com.ims.beans.users;
 import com.ims.dao.UsersDAO;
 

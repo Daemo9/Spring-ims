@@ -35,6 +35,7 @@
 			<property name="annotatedClasses">
 				<list>
 					<value>com.ims.beans.users</value>
+					<value>com.ims.beans.Items</value>
 				</list>
 			</property>
 			<property name="hibernateProperties">
@@ -68,7 +69,7 @@
             <property name="paramName" value="language" />
         </bean>
     </mvc:interceptors>
-	
+	<tx:annotation-driven transaction-manager="transactionManager" />
 	  <mvc:annotation-driven></mvc:annotation-driven>
     <mvc:resources mapping="/resources/**" location="/resources/"/>
 </beans>

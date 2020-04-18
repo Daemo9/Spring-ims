@@ -8,8 +8,7 @@
 <title>
 Inventory Management
 </title>
-<link rel="stylesheet" type="text/css"
-	href="<c:url value="/resources/css/err.css"/>" />
+<link rel="stylesheet" type="text/css"	href="<c:url value="/resources/css/err.css"/>" />
 </head>
 <body>
 	

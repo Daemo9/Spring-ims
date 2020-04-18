@@ -102,6 +102,4 @@ public class users {
 	public void setPhoneNum(String phoneNum) {
 		this.phoneNum = phoneNum;
 	}
-	
-	
 }
