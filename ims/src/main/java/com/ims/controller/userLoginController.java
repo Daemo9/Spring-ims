@@ -32,8 +32,10 @@ public class userLoginController {
 	 model.addAttribute("user",new users());
 	 return "index"; 
 	 }
-	 
-	
+	  @RequestMapping("/home")
+	public String home() {
+		  return "/welcome";
+	}
 	@RequestMapping(value = "/welcome", method = RequestMethod.POST)
 	public String doLogin(@RequestParam("email")String email, @RequestParam("password")String password, Model model) {
 		

@@ -36,6 +36,7 @@
 				<list>
 					<value>com.ims.beans.users</value>
 					<value>com.ims.beans.Items</value>
+					<!-- <value>com.ims.beans.StockDetails</value> -->
 				</list>
 			</property>
 			<property name="hibernateProperties">

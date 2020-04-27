@@ -316,5 +316,7 @@
 
 			});
 </script>
-</body>
-</html>
+<!-- </body>
+</html> -->
+
+<%@ include file="common/footer.jsp"%>
